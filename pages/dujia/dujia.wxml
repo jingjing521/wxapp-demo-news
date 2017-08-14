@@ -1,0 +1,13 @@
+
+<!--pages/dujia/dujia.wxml-->
+<view wx:for="{{newsList}}" class="dujia_list">
+  <view class="dujia_list_cate">
+    <view class="dujia_list_cate_line"></view>
+    <view clss="dujia_list_cate_text">{{item.cate}}</view>
+    <view class="dujia_list_cate_line"></view>
+  </view>
+  <view class="dujia_list_img">
+    <image src="{{item.img}}" mode="widthFix"></image>
+  </view>
+  <view class="dujia_list_title">{{item.title}}</view>
+</view>

@@ -1,0 +1,29 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{newsList}}">
+    <view wx:if="{{item.type == 1}}" class="newsList">
+      <view class="newsListImg">
+        <image src="{{item.img}}" mode="widthFix"></image>
+      </view>
+      <view class="newsListContent">
+        <view class="newsListTitle">{{item.title}}</view>
+        <view class="newsListFrom">from:{{item.author}}</view>
+      </view>
+    </view>
+    <view wx:elif="{{item.type == 2}}" class="newsList2">
+      <view class="newsListTitle">{{item.title}}</view>
+      <view class="newsListImg2">
+        <image src="{{item}}" wx:for="{{item.img}}" mode="widthFix"></image>
+      </view>
+      <view class="newsListFrom">from:{{item.author}}</view>
+    </view>
+    <view wx:elif="{{item.type == 3}}" class="newsList3">
+      <view class="newsListTitle">{{item.title}}</view>
+      <view class="newsListImg3">
+        <image src="{{item.img}}" mode="widthFix"></image>
+      </view>
+      <view class="newsListFrom">from:{{item.author}}</view>
+    </view>
+  </view>
+</view>
